@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-icons/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo font-roboto">
+        marlon<span class="text-red">.muring</span>
+      </div>
+      <div>
+        <ul class="nav-links font-roboto">
+          <li><a href="#about">_about</a></li>
+          <li><a href="#skills">_skills</a></li>
+          <li><a href="#contact">_contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo font-roboto">
+        marlon<span class="text-red">.muring</span>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links font-roboto">
+          <li><a href="#about" onclick="toggleMenu()">_about</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">_skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">_contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/images/developer.png"
+          alt="marlon muring profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1 font-200">Hello 🖐, I'm</p>
+        <h1 class="title text-red font-roboto">
+          Marlon <span class="text-blue">Muring</span>
+        </h1>
+        <p class="section__text__p2 font-200 text-white">
+          Full-Stack Web Developer
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/files/my-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1 text-red">Get To Know More</p>
+      <h1 class="title text-white font-roboto">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/images/my-profile-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="bi bi-terminal-fill icon fs-2"></i>
+              <h3 class="ls-2">Experience</h3>
+              <p class="text-dark font-roboto fs-1">
+                1 year <br />Web Development
+              </p>
+            </div>
+            <div class="details-container">
+              <i class="bi bi-mortarboard-fill icon fs-2"></i>
+              <h3 class="ls-2">Education</h3>
+              <p class="text-dark font-roboto fs-1">
+                Bachelors Degree<br />BS in Computer Science
+              </p>
+            </div>
+          </div>
+          <div class="text-container about-text-div">
+            <p class="about-text">
+              Hi there, I hope you have a wonderful day. I'm Marlon H. Muring
+              from Bohol, Philippines, an individual with passion for building
+              applications with code and learning new things. Outside of
+              programming my hobbies includes playing guitar and basketball.
+            </p>
+          </div>
+        </div>
+      </div>
+      <i
+        class="bi bi-chevron-double-down arrow text-white fs-2"
+        onclick="location.href='./#skills'"
+      ></i>
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1 text-red">My Technical</p>
+      <h1 class="title text-white font-roboto">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="fb-details-container">
+            <h2 class="skills-sub-title text-red ls-2">Frontend</h2>
+            <div class="article-container">
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/html5.png"
+                    alt="HTML5 logo"
+                    class="tech-logo"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">HTML</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/css3.png"
+                    alt="CSS3 logo"
+                    class="tech-logo"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">CSS</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/javascript.png"
+                    alt="JavaScript logo"
+                    class="tech-logo-sm"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/vuejs.png"
+                    alt="VueJS logo"
+                    class="tech-logo"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">VueJS</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/reactjs.png"
+                    alt="ReactJS logo"
+                    class="tech-logo"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">ReactJS</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/bootstrap.png"
+                    alt="Bootstrap5 logo"
+                    class="tech-logo"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">Bootstrap</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/tailwind.png"
+                    alt="TailwindCSS logo"
+                    class="tech-logo"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">Tailwind CSS</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="fb-details-container">
+            <h2 class="skills-sub-title text-red ls-2">Backend</h2>
+            <div class="article-container">
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/php.png"
+                    alt="Codeigniter logo"
+                    class="tech-logo-sm"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">PHP</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/laravel.png"
+                    alt="Codeigniter logo"
+                    class="tech-logo"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">Laravel</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/codeigniter.png"
+                    alt="Codeigniter logo"
+                    class="tech-logo"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">Codeigniter</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/mysql.png"
+                    alt="MySQL logo"
+                    class="tech-logo-sm"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <div class="tech-stack">
+                  <img
+                    src="./assets/images/tech-stacks/git.png"
+                    alt="Git logo"
+                    class="tech-logo"
+                  />
+                </div>
+                <div>
+                  <h3 class="ls-2 ts-label">Git</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i
+        class="bi bi-chevron-double-down arrow text-white fs-2"
+        onclick="location.href='./#contact'"
+      ></i>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1 text-red">Get in Touch</p>
+      <h1 class="title text-white font-roboto">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="bi bi-linkedin text-white fs-1"></i>
+          <p>
+            <a target="_blank" href="https://www.linkedin.com/in/marlonhmuring"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <i class="bi bi-envelope-at-fill text-white fs-1"></i>
+          <p>
+            <a href="mailto:marlgnirum32@gmail.com">marlgnirum32@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <i class="bi bi-github text-white fs-1"></i>
+          <p>
+            <a target="_blank" href="https://www.github.com/marlonmdev"
+              >Github</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links font-roboto">
+            <li><a href="#about">_about</a></li>
+            <li><a href="#skills">_skills</a></li>
+            <li><a href="#contact">_contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="text-white">Copyright &copy; 2023 | Marlon Muring</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
